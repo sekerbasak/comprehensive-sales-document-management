@@ -83,8 +83,7 @@ int main() {
     } while (secim != 1 && secim != 2 && secim != 3 && secim != 4); //kullanicinin girdigi sayi 1,2,3,4 degilse surekli doner..
 
     if (secim == 1) { // eger kullanici urun ile ilgili islemleri secerse if calisir.karsisina urunle ilgili islem secenekleri cikar
-        ofstream DosyaYaz; //yazma dosyasina isim verdik
-        DosyaYaz.open("urun.txt", ios::app);// urun adli dosya acildi 
+      
         do {
             cout << "   YAPMAK ISTEDIGINIZ URUN ISLEMINI SECINIZ..." << endl;
             cout << "   1) URUN EKLEME  " << endl;
@@ -95,7 +94,8 @@ int main() {
             cin >> urunislem_secim;
         } while (secim != 1 && secim != 2 && secim != 3 && secim != 4);
 
-
+       ofstream DosyaYaz; //yazma dosyasina isim verdik
+        DosyaYaz.open("urun.txt", ios::app);// urun adli dosya acildi 
 
         if (urunislem_secim == 1) { // kullanici URUN EKLEMEYI secti..
 
@@ -116,6 +116,7 @@ int main() {
                 cout << "  Baska urun ekleyecek misiniz?(e/h)" << endl;
                 cin >> cevap;
             } while (!(cevap == 'h')); // cevap hayir olana kadar dondurur..
+            
             DosyaYaz.close(); //dosyayi kapatir
             cout << " Dosya yazimi basariyla tamamlandi:)" << endl;
             return 0;
