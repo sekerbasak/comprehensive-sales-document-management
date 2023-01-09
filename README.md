@@ -1,5 +1,5 @@
 ### cok-kapsaml-satis-yapan-firmanin-belgelerini-saklayan-program
-#### (c++ diliyle yazılmıştır.)
+
 #### --Yaklaşık 1 ayımı alan bu çok kapsamlı program bilgisayar satışlarını yapan bir firmanın belgelerini, dosyalarını barındıracak şekilde hazırlanmıştır..
 #### --İçinde 4 işlem ve her işleminde içinde yaklaşık 5 ayrı işlem mevcuttur..
 #### --Programın kendi içinde dosya oluşturup, dosya silme, dosyadan veri arama gibi çeşitli fonksiyonları da mevcuttur
